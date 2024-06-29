@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Menu</title>
+    <link rel="stylesheet" href="Menu.css">
+</head>
+
+<body>
+    <script>
+        function increaseValue() 
+        {
+            var value = parseInt(document.getElementById('number').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('number').value = value;
+        }
+
+        function decreaseValue() 
+        {
+            var value = parseInt(document.getElementById('number').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value < 1 ? value = 1 : '';
+            value--;
+            document.getElementById('number').value = value;
+        }
+    </script>
+    <div class="nav__links" >
+        <ul style="color:white">
+          <li><a href="index.html"> HOME</a></li>
+          <li><a href="desert.html">DESSERT</a></li>
+          <li><a href="Menu.html">MENU</a></li>
+          
+          <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="grid">
+        <div class="d">
+            <div class="items">
+                <img src="tandoori.jpg" width="100px" height="100px"><br>
+                <h4>Chicken Tandoori</h4>
+                <h5>Price Details:rs:250</h5>
+                <center><button>Buy</button></center>
+    
+                <p>
+                <form>
+                    <div id="decrease" onclick="decreaseValue()" value="Decrease Value"></div>
+                    <input type="number" id="number" value="0"/>
+                    <div id="increase" onclick="increaseValue()" value="Increase Value"></div>
+                </form>
+                </p>
+            </div>
+        </div>
+        <div class="d">
+                <div class="items">
+                    <img src="chicken.jpg" width="100px" height="100px"><br>
+                    <h4>Chicken Rice</h4>
+                    <h5>Price Details:rs 150</h5>
+                    <center><button>Buy</button></center>
+    
+                    <p>
+                    <form>
+                        <div id="decrease" onclick="decreaseValue()" value="Decrease Value"></div>
+                        <input type="number" id="number" value="0" />
+                        <div id="increase" onclick="increaseValue()" value="Increase Value"></div>
+                    </form>
+                    </p>
+                </div>
+            </div>
+            <div class="d">
+                <div class="items">
+                    <img src="naan.webp" width="100px" height="100px"><br>
+                    <h4>Butter Naan</h4>
+                    <h5>Price Details:rs 80</h5>
+                    <center><button>Buy</button></center>
+    
+                    <p>
+                    <form>
+                        <div id="decrease" onclick="decreaseValue()" value="Decrease Value"></div>
+                        <input type="number" id="number" value="0" />
+                        <div id="increase" onclick="increaseValue()" value="Increase Value"></div>
+                    </form>
+                    </p>
+                </div>
+            </div>
+            <div class="d">
+                <div class="items">
+                    <img src="egg noodles.webp" width="100px" height="100px"><br>
+                    <h4>Egg-Fried Noodles</h4>
+                    <h5>Price Details:rs 90</h5>
+                    <center><button>Buy</button></center>
+    
+                    <p>
+                    <form>
+                        <div id="decrease" onclick="decreaseValue()" value="Decrease Value"></div>
+                        <input type="number" id="number" value="0" />
+                        <div id="increase" onclick="increaseValue()" value="Increase Value"></div>
+                    </form>
+                    </p>
+                </div>
+            </div>
+            <div class="d">
+                <div class="items">
+                    <img src="MuttonBiryani.webp" width="100px" height="100px"><br>
+                    <h4>Mutton Briyani</h4>
+                    <h5>Price Details:rs 300</h5>
+                    <center><button>Buy</button></center>
+    
+                    <p>
+                    <form>
+                        <div id="decrease" onclick="decreaseValue()" value="Decrease Value"></div>
+                        <input type="number" id="number" value="0" />
+                        <div id="increase" onclick="increaseValue()" value="Increase Value"></div>
+                    </form>
+                    </p>
+            </div>
+        </div>
+        <div class="d">
+            <div class="items">
+                <img src="pannertika.jpg" width="100px" height="100px"><br>
+                <h4>Panner Tika</h4>
+                <h5>Price Details:rs 120</h5>
+                <center><button>Buy</button></center>
+    
+                <p>
+                <form>
+                    <div id="decrease" onclick="decreaseValue()" value="Decrease Value"></div>
+                    <input type="number" id="number" value="0" />
+                    <div id="increase" onclick="increaseValue()" value="Increase Value"></div>
+                </form>
+                </p>
+        </div>
+    </div>
+        </div>
+
+</body>
+
+</html>
